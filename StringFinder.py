@@ -6,7 +6,7 @@ from functools import partial
 filename = 'F:\Installers\VBox.exe'  # this is just my test thing. it's just the virtual box installer
 # filename = input('enter file path: ')
 byteList = []
-if os.path.exists() and os.path.isfile():
+if os.path.exists(filename) and os.path.isfile(filename):
     with open(filename, 'rb') as file:
         for byte in iter(partial(file.read, 1), b''):
             byteList.append(byte)
